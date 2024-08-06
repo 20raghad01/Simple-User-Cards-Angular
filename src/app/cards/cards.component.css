@@ -1,0 +1,12 @@
+.c-div{
+    background-color: #D3D3D3;
+    border-color:  #7393B3 !important;
+    border-width: 3px !important;
+    
+}
+.imgdiv{
+    overflow: hidden;
+}
+.rounded{
+    border-radius: 20% !important;
+}

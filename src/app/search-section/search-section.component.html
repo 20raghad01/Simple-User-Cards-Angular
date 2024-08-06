@@ -1,0 +1,6 @@
+<div class="container p-5">
+    <input type="email" #emailInput name="email" id="email" placeholder="Search by Email" (input)="searchvalue = emailInput.value" class="p-1">
+    <button type="button" class="btn btn-primary mx-2" (click)="onsearching()">Search</button>
+    <button type="button" class="btn btn-success mx-2 px-3" (click)="reset(emailInput)">reset</button>
+</div>
+

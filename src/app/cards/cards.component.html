@@ -1,0 +1,17 @@
+<app-search-section (searching)="onsearchclick($event)"></app-search-section>
+<div class="container">
+    <div class="row m-2">
+        @for (user of UsersArray;track user.username) {
+            
+            <div class="rounded col-lg-3 col-md-4 col-sm-6 border  m-3 py-3 c-div d-flex flex-column align-items-center " *ngIf="!searchdiv || user.email.toLowerCase().includes(searchdiv)">
+                <div class="rounded-circle border imgdiv c-div w-50 h-50">
+                    <img [src]="imgurl" alt="person" class=" w-100 h-100 r">
+                </div>
+                <p class="mt-2">{{user.username}} <span [ngStyle]="{'color': user.verified? 'green' : 'red' }"><i class="fa fa-star"></i></span></p>
+                <p>{{user.email}}</p>
+                <p>{{user.phone}}</p>
+            </div>
+            }
+    </div>
+    
+</div>
